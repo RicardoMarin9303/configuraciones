@@ -1,0 +1,35 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+[keybindings]
+  new_tab = <Primary>KP_1
+  new_window = <Primary>KP_2
+[profiles]
+  [[default]]
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = DejaVu Sans Mono 16
+    foreground_color = "#e53c00"
+    show_titlebar = False
+    scrollbar_position = hidden
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:26
+      maximised = False
+      fullscreen = False
+      size = 1280, 860
+      title = /bin/bash
+      last_active_term = 1962443d-9dae-42fa-bf6c-6878c4d0f92a
+      last_active_window = True
+    [[[terminal1]]]
+      type = Terminal
+      parent = child0
+      order = 0
+      profile = default
+      uuid = 1962443d-9dae-42fa-bf6c-6878c4d0f92a
+[plugins]

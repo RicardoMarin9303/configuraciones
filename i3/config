@@ -222,12 +222,16 @@ assign[class="X-terminal-emulator"] $ws1
 assign[class="PacketTracer"] $ws9
 assign[class="Spyder"] $ws2
 assign[class="Cherrytree"] $ws2
+assign[class="VirtualBox Manager"] $ws5
+assign[class="VirtualBox "] $ws5
 
 # Asigna para una ventana especifica, el modo apertura
 # flotante y posicion
 for_window [class="PacketTracer"] floating enable
 for_window [class="TelegramDesktop"] floating enable, resize set 800 750, move position 10 40
 for_window [class="Rhythmbox"] floating enable, resize set 800 600, move position 1100 40
+for_window [class="VirtualBox Manager"] layout tabbed
+
 # borrar el borde de encima de las ventanas
 for_window [class="^.*"] border pixel 3
 

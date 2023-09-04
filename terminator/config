@@ -9,7 +9,7 @@
     background_type = transparent
     cursor_color = "#aaaaaa"
     font = DejaVu Sans Mono 16
-    foreground_color = "#e53c00"
+    foreground_color = "#00ff00"
     show_titlebar = False
     scrollbar_position = hidden
     use_system_font = False

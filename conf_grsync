@@ -1,0 +1,1 @@
+rsync -r -t -p -o -g -v --progress --delete --size-only -s /media/bubu/1tb_backup/respaldo_rlmz/ /media/bubu/2tb_backup/respaldo_rlmz/

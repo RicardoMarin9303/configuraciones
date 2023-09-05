@@ -1,1 +1,5 @@
+# con esta serie de opciones conseguimos hacer un respaldo tipo espejo a nuestro directorio destino 
 rsync -r -t -p -o -g -v --progress --delete --size-only -s /media/bubu/1tb_backup/respaldo_rlmz/ /media/bubu/2tb_backup/respaldo_rlmz/
+
+# solo muestra el resultado pero no se ejecuta
+sync -r -n -t -p -o -g -v --progress --size-only -s /media/bubu/Laboratorios/maquinas/ /media/bubu/Laboratorio2/

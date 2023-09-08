@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# declaramos las variables de nuestro programos
+aplicaciones=("terminator" "i3" "polybar")
+dir_conf="Descargas/Programas/configuraciones"
+
+# entramos en cada directorio y eliminamos las config viejas 
+for i in "${aplicaciones[@]}"; do 
+	cd "$HOME/.config/$i" 
+	rm config 
+	echo -e "Entrando en el directorio $(pwd) \n" 
+	sleep 3  
+done
+
+# ir directorio descarga # borrar si existe el directorio configuraciones # clonamos configuraciones
+
+cd $HOME/Descargas/Programas && \
+rm -fr configuraciones && \
+git clone https://github.com/RicardoMarin9303/configuraciones.git
+sleep 1
+for i in "${aplicaciones[@]}" ; do cp $HOME/$dir_conf/$i/config ~/.config/$i/ ; done
+
+echo -e "proceso terminado"
+sleep 3 
+

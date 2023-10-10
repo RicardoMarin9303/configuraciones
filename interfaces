@@ -1,0 +1,43 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# Colocamos la Ip estatica para Parrot os
+auto enp2s0f2
+iface enp2s0f2 inet static
+        address 192.168.1.143
+        netmask 255.255.255.0
+        gateway 192.168.1.1
+        network 192.168.1.0
+        broadcast 192.168.1.255
+
+#auto wlp3s0
+#iface wlp3s0 inet static
+#        address 192.168.1.130
+#        netmask 255.255.255.0
+#        gateway 192.168.1.1
+        #network 192.168.1.0
+        #broadcast 192.168.1.255
+
+#auto enx00e04c68002f
+#iface enx00e04c68002f inet static
+#address 192.168.1.143
+#netmask 255.255.255.0
+#gateway 192.168.1.1
+#network 192.168.1.0
+#broadcast 192.168.1.255
+
+# Configuracion de SOC en aruba
+#auto enp2s0f2
+#iface enp2s0f2 inet static
+#        address 192.168.10.220
+#        netmask 255.255.255.0
+#        gateway 192.168.10.1
+#        network 192.168.1.0
+#        broadcast 192.168.1.255
+# terminar con un 
